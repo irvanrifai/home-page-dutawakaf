@@ -10005,3 +10005,34 @@ h6,
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #4154f1;
 }
+
+/* mitra-css */
+.mitra-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.mitra-carousel .owl-nav .owl-prev,
+.mitra-carousel .owl-nav .owl-next {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: #2878EB;
+  font-size: 22px;
+  transition: .5s;
+}
+
+.mitra-carousel .owl-nav .owl-prev:hover,
+.mitra-carousel .owl-nav .owl-next:hover{
+  background: #F14D5D;
+}
