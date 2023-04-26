@@ -83,135 +83,134 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Courses Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row mx-0 justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center position-relative mb-5">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Program</h6>
-                        <h1 class="display-6">Checkout New Releases Of Our Program</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-1.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Diklat Fungsional Perwakafan</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(30 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-2.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Diklat Wakaf Manfaat Asuransi Jiwa Syariah</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(30 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-3.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Diklat Kompetensi Profesi Perwakafan</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(220 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-4.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Sertifikasi Profesi Perwakafan</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(300 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-5.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Sertifikasi Pengelola Biro Wakaf</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(300 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-4">
-                    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ url('/program/detail') }}">
-                        <img class="img-fluid" src="{{ asset('landing/img/courses-6.jpg') }}" alt="">
-                        <div class="courses-text">
-                            <h4 class="text-center text-white px-3">Sertifikasi Pengelola Swakarta</h4>
-                            <div class="border-top w-100 mt-3">
-                                <div class="d-flex justify-content-between p-4">
-                                    <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
-                                    <span class="text-white"><i class="fa fa-star mr-2"></i>4.5
-                                        <small>(300 JP)</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+@section('css_login')
+<!-- Font Awesome -->
+{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/> --}}
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+<!-- MDB -->
+{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/> --}}
+{{-- custom bootstrap css --}}
+<link href="{{ asset('landing/css/help-login.css') }}" rel="stylesheet">
+<style>
+    .nav-link {
+        color: #696969
+    }
+</style>
+@endsection
 
-                {{-- pagination --}}
-                <div class="col-12">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination pagination-lg justify-content-center mb-0">
-                          <li class="page-item disabled">
-                            <a class="page-link rounded-0" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link rounded-0" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
+<div class="row justify-content-center bg-image mx-0 mb-5">
+    <div class="col-lg-6 py-5">
+        <div class="bg-transparent pb-5 pt-1 mb-5 mt-1">
+
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
+                </li>
+            </ul>
+            <hr>
+            <!-- Pills navs -->
+
+
+            {{-- pills content --}}
+            <div class="tab-content pt-5">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <form action="{{ url('/login') }}" method="POST">
+                        @csrf
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="username" id="input-username" type="text" class="@error('username') is-invalid @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
+                                    @error('username')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="password" id="input-password" type="password" class="@error('password') is-invalid @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
+                                    @error('password')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row py-3">
+                            <div class="col-sm-4">
+                                <button class="btn btn-success btn-block" type="submit" style="height: 40px;">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                    <form action="{{ url('/register') }}" method="POST">
+                        @csrf
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="name" id="input-name" type="text" class="@error('name') is-invalid @enderror form-control bg-light border-0.25" placeholder="Name" style="padding: 25px 15px;">
+                                    @error('name')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="email" id="input-email" type="email" class="@error('email') is-invalid @enderror form-control bg-light border-0.25" placeholder="Email" style="padding: 25px 15px;">
+                                    @error('email')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="password" id="input-password_register" type="password" class="@error('password') is-invalid @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
+                                    @error('password')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="confirm_password" id="input-confirm_password" type="password" class="form-control bg-light border-0.25" placeholder="Repeat Password" style="padding: 25px 15px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input name="username" id="input-username" type="text" class="@error('username') is-invalid @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
+                                    @error('username')
+                                        <span class="invalid-feedback d-block">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn btn-success btn-block" type="submit" style="height: 53px;">Register</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+            {{-- pills content --}}
         </div>
     </div>
-    <!-- Courses End -->
+</div>
+@endsection
+
+@section('js_login')
+<!-- MDB -->
+<script src="{{ asset('landing/js/help-login.js') }}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+@endsection
 
     <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
         class="fa fa-angle-double-up"></i></a>
