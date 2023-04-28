@@ -10127,6 +10127,7 @@ h6,
   text-align: center;
   top: -40px;
   width: 100%;
+  box-shadow: 3px;
 }
 
 .our_activity .single-Promo h2 {
@@ -10175,11 +10176,27 @@ h6,
   background: #fff;
 }
 
+.our_activity .single-Promo:hover {
+  border-radius: 6px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px 5px 0;
+  padding: 20px;
+  position: relative;
+  height: 210px;
+  width: 180px;
+  transition: all 300ms;
+}
+
 .our_activity .single-Promo:hover>h2 a {
-  color: #01d262;
+  /* color: #ffeeba; */
+  /* transform: scale(1.2); */
+  /* font-size:16px;
+  transition: all 500ms; */
 }
 
 .our_activity .single-Promo:hover>.promo-icon i {
+  /* transform: scale(1.1);
+  transition: all 500ms; */
   background: #01d262;
   color: #fff;
 }
