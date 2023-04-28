@@ -10236,10 +10236,10 @@ h6,
 }
 
 .card .card-body {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
-.card i {
+.card .icon-offset i {
   border: 0 solid #000;
   border-radius: 50%;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -10247,4 +10247,23 @@ h6,
   padding: 25px;
   text-align: center;
   background: #fff;
+}
+
+.card .icon-offset-left i {
+  border: 0 solid #000;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+}
+
+.card .icon-offset-left {
+  top: 10px;
+  position: absolute;
+  text-align: center;
+  left: -95px;
+  width: 100%;
+  box-shadow: 3px;
 }
