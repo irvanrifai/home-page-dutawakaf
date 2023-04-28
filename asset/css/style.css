@@ -55,7 +55,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -362,7 +362,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Monsserrat", sans-serif;
+  font-family: "Monsserrat";
   font-weight: 500;
   line-height: 1.2;
   color: #120F2D;
@@ -10103,7 +10103,17 @@ h6,
       padding: 40px 30px;
   }
   .our_activity .single-Promo p {
-      text-align: justify;
+    text-align: justify;
+  }
+}
+
+@media (min-width : 100px) and (max-width : 550px) {
+  .our_activity .single-Promo {
+    margin: 28px 5px 0;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+    width: 180px;
   }
 }
 
@@ -10118,7 +10128,8 @@ h6,
   padding: 20px;
   position: relative;
   height: 210px;
-  width: 180px;
+  min-width: 180px;
+  max-width: 200px;
 }
 
 .our_activity .single-Promo .promo-icon {
@@ -10204,4 +10215,36 @@ h6,
 .our_activity .single-Promo:hover>h2::before {
   background: #01d262;
   color: #fff;
+}
+
+.card-rounded {
+  border-radius: 7px;
+}
+
+.card-rounded:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.card .icon-offset {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: -40px;
+  width: 100%;
+  box-shadow: 3px;
+}
+
+.card .card-body {
+  padding-top: 60px;
+}
+
+.card i {
+  border: 0 solid #000;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  padding: 25px;
+  text-align: center;
+  background: #fff;
 }
