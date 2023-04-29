@@ -62,42 +62,30 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link">HOME</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="#" class="dropdown-item">Backgorund</a>
-                            <a href="#" class="dropdown-item">Vision & Mission</a>
-                            <a href="#" class="dropdown-item">License</a>
-                        </div>
-                    </div>  -->
                     <a href="profil.html" class="nav-item nav-link">PROFIL</a>
-                    <a href="program.html" class="nav-item nav-link">PROGRAM</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">PROGRAM</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="program-detail/d-program-mbkm.html" class="dropdown-item">Kemitraan MBKM</a>
+                            <a href="program-detail/d-program-prakerja.html" class="dropdown-item">Program Kartu Pra Kerja</a>
+                            <a href="program-detail/d-program-diklat-dasar.html" class="dropdown-item">Diklat Dasar Perwakafan</a>
+                            <a href="program-detail/d-program-diklat-kompetensi.html" class="dropdown-item">Diklat Kompetensi Profesi Perwakafan</a>
+                            <a href="program-detail/d-program-sertifikasi-kompetensi.html" class="dropdown-item">Sertifikasi Kompetensi Profesi Perwakafan</a>
+                            <a href="program-detail/d-program-penempatan-kerja.html" class="dropdown-item">Penempatan Kerja Profesi Perwakafan</a>
+                        </div>
+                    </div> 
+                    <!-- <a href="program.html" class="nav-item nav-link">PROGRAM</a> -->
                     <a href="alumni.html" class="nav-item nav-link">ALUMNI</a>
                     <a href="karir.html" class="nav-item nav-link">KARIR</a>
                 </div>
                 <div>
-                    <a href="login.html" class="btn btn-success py-2 px-4">LOGIN</a>
+                    <a href="login.html" class="btn btn-success py-2 px-4 active">LOGIN</a>
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
 
-@section('css_login')
-<!-- Font Awesome -->
-{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/> --}}
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-<!-- MDB -->
-{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet"/> --}}
-{{-- custom bootstrap css --}}
-<link href="{{ asset('landing/css/help-login.css') }}" rel="stylesheet">
-<style>
-    .nav-link {
-        color: #696969
-    }
-</style>
-@endsection
 
 <div class="row justify-content-center bg-image mx-0 mb-5">
     <div class="col-lg-6 py-5">
@@ -116,28 +104,28 @@
             <!-- Pills navs -->
 
 
-            {{-- pills content --}}
+            <!-- {{-- pills content --}} -->
             <div class="tab-content pt-5">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                    <form action="{{ url('/login') }}" method="POST">
-                        @csrf
+                    <form action="" method="POST">
+                        <!-- @csrf -->
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="username" id="input-username" type="text" class="@error('username') is-invalid @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
-                                    @error('username')
+                                    <input name="username" id="input-username" type="text" class="@error('username') @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
+                                    <!-- @error('username')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="password" id="input-password" type="password" class="@error('password') is-invalid @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
-                                    @error('password')
+                                    <input name="password" id="input-password" type="password" class="@error('password') @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
+                                    <!-- @error('password')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                         </div>
@@ -149,33 +137,33 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-                    <form action="{{ url('/register') }}" method="POST">
-                        @csrf
+                    <form action="" method="POST">
+                        <!-- @csrf -->
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="name" id="input-name" type="text" class="@error('name') is-invalid @enderror form-control bg-light border-0.25" placeholder="Name" style="padding: 25px 15px;">
-                                    @error('name')
+                                    <input name="name" id="input-name" type="text" class="@error('name') @enderror form-control bg-light border-0.25" placeholder="Name" style="padding: 25px 15px;">
+                                    <!-- @error('name')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="email" id="input-email" type="email" class="@error('email') is-invalid @enderror form-control bg-light border-0.25" placeholder="Email" style="padding: 25px 15px;">
-                                    @error('email')
+                                    <input name="email" id="input-email" type="email" class="@error('email') @enderror form-control bg-light border-0.25" placeholder="Email" style="padding: 25px 15px;">
+                                    <!-- @error('email')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="password" id="input-password_register" type="password" class="@error('password') is-invalid @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
-                                    @error('password')
+                                    <input name="password" id="input-password_register" type="password" class="@error('password') @enderror form-control bg-light border-0.25" placeholder="Password" style="padding: 25px 15px;">
+                                    <!-- @error('password')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -187,10 +175,10 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input name="username" id="input-username" type="text" class="@error('username') is-invalid @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
-                                    @error('username')
+                                    <input name="username" id="input-username" type="text" class="@error('username') @enderror form-control bg-light border-0.25" placeholder="Username" style="padding: 25px 15px;">
+                                    <!-- @error('username')
                                         <span class="invalid-feedback d-block">{{ $message }}</span>
-                                    @enderror
+                                    @enderror -->
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -200,17 +188,12 @@
                     </form>
                 </div>
             </div>
-            {{-- pills content --}}
+            <!-- {{-- pills content --}} -->
         </div>
     </div>
 </div>
-@endsection
+<!-- @endsection -->
 
-@section('js_login')
-<!-- MDB -->
-<script src="{{ asset('landing/js/help-login.js') }}"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
-@endsection
 
     <a href="#" class="btn btn-lg btn-success rounded-0 btn-lg-square back-to-top"><i
         class="fa fa-angle-double-up"></i></a>
@@ -218,7 +201,7 @@
     <!-- Footer Start -->
     <div class="container-fluid position-relative overlay-top bg-light py-4">
         <div class="container mt-5 pt-5">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6 mb-5">
                     <a href="#" class="navbar-brand">
                         <img src="asset/img/duta-wakaf-institute.png" alt="" width="200" />
@@ -241,27 +224,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h3 class="mb-4">Get In Touch</h3>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Contact Us</h3>
                     <p>
                         <i class="fa fa-map-marker-alt mr-2"></i>Jl. Kusumanegara No.
                         284C, Gedongkuning, Yogyakarta
                     </p>
                     <p><i class="fa fa-phone-alt mr-2"></i>08112833638</p>
                     <p><i class="fa fa-envelope mr-2"></i>dutawakaf@gmail.com</p>
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="mr-4" href="https://twitter.com/dutawakaf" target="_blank"><i
-                                class="fab fa-2x fa-twitter"></i></a>
-                        <a class="mr-4" href="https://www.facebook.com/dutawakaf.id" target="_blank"><i
-                                class="fab fa-2x fa-facebook-f"></i></a>
-                        <a class="mr-4" href="#" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
-                        <a class="text-white" href="https://www.instagram.com/dutawakaf.id/" target="_blank"><i
-                                class="fab fa-2x fa-instagram"></i></a>
-                    </div>
                 </div>
-                <div class="col-md-4 mb-5">
+                <!-- <div class="col-md-4 mb-5">
                     <h3 class="mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
@@ -270,6 +244,15 @@
                         <a class="" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
                         <a class="my-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
                         <a class="" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div> -->
+                <div class="col-md-6">
+                    <h3 class="mb-4">Follow Us</h3>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="mr-4" href="https://twitter.com/dutawakaf" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="mr-4" href="https://www.facebook.com/dutawakaf.id" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <!-- <a class="mr-4" href="#" target="_blank"><i class="fab fa-2x fa-instagram"></i></a> -->
+                        <a class="mr-4" href="https://www.instagram.com/dutawakaf.id/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
